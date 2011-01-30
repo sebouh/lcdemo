@@ -1,0 +1,39 @@
+body {
+	margin:0px;
+	padding:0px;
+}
+
+#topBar {
+    background-color: #599B99;
+    height: 60px;
+    width: 100%;
+    z-index: -1;	
+}
+#logo{
+	margin:0 auto;
+	width:200px;
+}
+#columns {#000000
+	
+}
+#side {
+	background-color:#CCCCCC;
+	float:left;
+	width:200px;
+	display:block;
+	min-height:600px;
+}
+#main{
+	margin:0 auto;
+	
+}
+#asbc{
+	width: 200px
+	margin:0 auto;
+}
+
+#user_nav{
+	float:right;
+	font-size:14px;
+	color:#000000;
+}

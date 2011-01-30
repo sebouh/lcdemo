@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lcdemo</title>
+        <%= stylesheet_link_tag :all %>
+        <%= javascript_include_tag :defaults %>
+        <%= csrf_meta_tag %>
+    </head>
+    <body>
+    	
+        <div id="topBar">
+            <div id="logo">
+                <%=image_tag("livecove.jpg") %>
+            </div>
+        </div>
+        
+		<div id="columns">
+            <div id="side">
+            	<div id="user_nav">
+            		<%= link_to  "Register", new_user_path%>
+            		<%= link_to  "Login", :login %>
+				
+               	</div>
+            </div>
+            <div id="main">
+                <div id="asbc"><%= yield %></div>
+            </div>
+        </div>
+    </body>
+</html>

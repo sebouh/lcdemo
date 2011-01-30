@@ -1,0 +1,23 @@
+<h1>Listing coves</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @coves.each do |cove| %>
+  <tr>
+    <td><%= cove.title %></td>
+    <td><%= link_to 'Show', cove %></td>
+    <td><%= link_to 'Edit', edit_cove_path(cove) %></td>
+    <td><%= link_to 'Destroy', cove, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cove', new_cove_path %>
